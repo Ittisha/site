@@ -25,10 +25,10 @@
     <h2>Новинки</h2>
     <div class="newly-items">
       <div class="catalog-item">
-        <h2>Вахтёр</h2>
-        Алк. <1%
+        <h3>Вахтёр</h3>
+        <div>Алк. <1%
         <br>
-        Ккал: 35
+        Ккал: 35</div>
         <p>Ржаной хлеб, Вода, Солод, Соль</p>
         <img src="img/bottle-left.jpg" width="319" height="459" alt="Вахтёр">
         <p>Терпкий и мощный, вкус этого кваса взбодрит после тяжелого дня и придаст сил для вечерних приключений!</p>
@@ -37,7 +37,7 @@
         <b>150 Р.</b>
       </div>
       <div class="catalog-item">
-        <h2>Романтик</h2>
+        <h3>Романтик</h3>
         Алк. <0,5%
         <br>
         Ккал: 27
@@ -52,13 +52,13 @@
   </div>
   <div class="features">
     <ul>
-      <li class="feature-item"><h3>Варим сами</h3>
+      <li class="feature-item"><h2>Варим сами</h2>
         <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
       </li>
-      <li class="feature-item"><h3>Своё, родное</h3>
+      <li class="feature-item"><h2>Своё, родное</h2>
         <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
       </li>
-      <li class="feature-item"><h3>Не экономим</h3>
+      <li class="feature-item"><h2>Не экономим</h2>
         <p>Человек это то, что он ест и пьет. У нас только качественные ингридиенты.</p>
       </li>
     </ul>
@@ -89,7 +89,7 @@
     <h2>Пресса о нас</h2>
     <div class="reviews-list">
       <blockquote class="review-item">
-        <p>Сегодня мы провели дегустацию чего-то действительно новенького - крафтового кваса.
+        <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса.
     Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
     <cite>Газета столичный Стольник</cite>
         <a class="btn" href="#" title="Читать статью">Читать далее</a>
@@ -108,28 +108,28 @@
       </tr>
       <tr>
         <td>Классика</td>
-        <td><1,2%</td>
+        <td>< 1,2%</td>
         <td>33</td>
         <td>330 мл</td>
         <td>120 Р.</td>
       </tr>
       <tr>
         <td>Шабаш</td>
-        <td> >1,2%</td>
+        <td> > 1,2%</td>
         <td>45</td>
         <td>330 мл</td>
         <td>250 Р.</td>
       </tr>
       <tr>
-        <td>Вахтёр<sup>Новинка</sup></td>
-        <td><1%</td>
+        <td>Вахтёр <sup>Новинка</sup></td>
+        <td>< 1%</td>
         <td>35</td>
         <td>0,5 л</td>
         <td>150 Р.</td>
       </tr>
       <tr>
-        <td>Романтик<sup>Новинка</sup></td>
-        <td><0,5%</td>
+        <td>Романтик <sup>Новинка</sup></td>
+        <td>< 0,5%</td>
         <td>27</td>
         <td>0,5 л</td>
         <td>90 Р.</td>
@@ -142,14 +142,17 @@
       Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
     <form class="order-form" action="/keksby-mail" method="post">
       <div class="order-form-group">
-        <label>Представьтесь:<input type="text" name="customer-name"></label>
+        <label>Представьтесь: <input type="text" name="customer-name"></label>
       </div>
-      <div class="order-form-group"><label>Номер телефона:<input type="text" name="phone"></label></div>
-      <div class="order-form-group"><label>Доп. номер:<input type="text" name="second_phone"></label></div>
-      <div class="order-form-group"><label>Email:<input type="text" name="email"></label></div>
-      <div class="order-form-group"><label>бъём заказа:<input type="text" name="amount"></label></div>
-      <div class="order-form-group"><label>Доп. комментарий:<textarea name="message"></textarea></label></div>
-      <div class="checkbox-area"><label><input type="checkbox" name="subscription">Я согласен получать квасную рассылку</label></div>
+      <div class="order-form-group"><label>Номер телефона: <input type="text" name="phone"></label></div>
+      <div class="order-form-group"><label>Доп. номер: <input type="text" name="second_phone"></label></div>
+      <div class="order-form-group"><label>Email: <input type="text" name="email"></label></div>
+      <div class="order-form-group"><label>Объем заказа:
+        <select name="amount">
+          <option value="1">От 5 до 10 баррелей в неделю</option>
+        </select></label></div>
+      <div class="order-form-group"><label>Доп. комментарий: <textarea name="message" rows="10" cols="75"></textarea></label></div>
+      <div class="checkbox-area"><label><input type="checkbox" name="subscription"> Я согласен получать квасную рассылку</label></div>
       <input type="submit" class="btn" value="Отправить заказ">
     </form>
   </div>
